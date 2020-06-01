@@ -78,9 +78,9 @@
                             $time = '';
                             date_default_timezone_set("Asia/Kolkata");
                             $diff = date_diff(date_create(date('Y-m-d H:i:s')), date_create($pinng->timestamp));
-                            if($diff->h == 0) {
+                            if($diff->m == 0 && $diff->m == 0 && $diff->d == 0 && $diff->h == 0) {
                                 $time = $diff->i.' minute(s) ago';
-                            } elseif($diff->d < 1) {
+                            } elseif($diff->m == 0 && $diff->m == 0 && $diff->d == 0) {
                                 $time = $diff->h.' hour(s) ago';
                             } else {
                                 $time = $pinng->timestamp;

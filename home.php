@@ -67,9 +67,9 @@
                                 if($diff->h < 1) {
                                     $badge = '<span class="badge badge-primary">New</span>';
                                 }
-                                if($diff->h == 0) {
+                                if($diff->y == 0 && $diff->m == 0 && $diff->d == 0 && $diff->h == 0) {
                                     $time = $diff->i.' minute(s) ago';
-                                } elseif($diff->d < 1) {
+                                } elseif($diff->m == 0 && $diff->m == 0 && $diff->d == 0) {
                                     $time = $diff->h.' hour(s) ago';
                                 } else {
                                     $time = $pinng->timestamp;
